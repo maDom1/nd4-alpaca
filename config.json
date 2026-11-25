@@ -1,0 +1,16 @@
+{
+  "paper": true,
+  "symbol": "BTC/USD",
+  "qty": 0.001,
+  "side": "buy",
+  "time_in_force": "gtc",
+  "limit_offset_pct": 5,
+  "data_feed": "us",
+  "stream_seconds": 20,
+  "history_days": 30,
+  "history_timeframe": "1Day",
+  "order_prefix": "DP-ND4",
+  "status_wait_seconds": 2,
+  "orders_to_show": 10,
+  "log_file": "rezultatai.log"
+}

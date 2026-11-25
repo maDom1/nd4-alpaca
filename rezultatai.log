@@ -1,0 +1,142 @@
+2026-11-25 01:53:00  Prisijungta prie Alpaca (paper). Paskyra PA3VKAGLQ, būsena: ACTIVE
+2026-11-25 01:53:00  Grynieji: 100000 USD | perkamoji galia: 199646.6 USD
+2026-11-25 01:53:00  Kriptovaliutų prekyba: leidžiama
+2026-11-25 01:53:00  Kitas laisvas pavedimo ID: DP-ND4-3
+2026-11-25 01:53:11  Prisijungta prie Alpaca (paper). Paskyra PA3VKAGLQ, būsena: ACTIVE
+2026-11-25 01:53:11  Grynieji: 100000 USD | perkamoji galia: 199646.6 USD
+2026-11-25 01:53:11  Kriptovaliutų prekyba: leidžiama
+2026-11-25 01:53:12  Kitas laisvas pavedimo ID: DP-ND4-3
+2026-11-25 01:53:15  Pavedimai (open), rasta 1:
+2026-11-25 01:53:15    [DP-ND4-1] brokerio ID 5d2f7a57-96b5-4bcd-8e29-e4b463a8dfa6 | market buy 1 AAPL | būsena: accepted
+2026-11-25 01:53:18  Atšaukimo užklausa pavedimui DP-ND4-1 išsiųsta.
+2026-11-25 01:53:20  Būsena po 2 s:
+2026-11-25 01:53:20    [DP-ND4-1] brokerio ID 5d2f7a57-96b5-4bcd-8e29-e4b463a8dfa6 | market buy 1 AAPL | būsena: canceled
+2026-11-25 01:53:26  Klausomasi BTC/USD kotiruočių 20 s (šaltinis: US)...
+2026-11-25 01:53:26  started data stream
+2026-11-25 01:53:26  starting data websocket connection
+2026-11-25 01:53:26  connecting to wss://stream.data.alpaca.markets/v1beta3/crypto/us
+2026-11-25 01:53:36  websocket connection error, restarting connection: timed out during opening handshake
+2026-11-25 01:53:37  starting data websocket connection
+2026-11-25 01:53:37  connecting to wss://stream.data.alpaca.markets/v1beta3/crypto/us
+2026-11-25 01:53:38  connected to wss://stream.data.alpaca.markets/v1beta3/crypto/us
+2026-11-25 01:53:38  subscribed to quotes: ['BTC/USD']
+2026-11-25 01:53:39    23:53:40 BTC/USD bid 59751.6 x 0.001997 | ask 59774.529 x 0.0010012 | vėlavimas -0.2 s
+2026-11-25 01:53:39    23:53:40 BTC/USD bid 59753.6 x 0.001009 | ask 59774.529 x 0.0010012 | vėlavimas -0.2 s
+2026-11-25 01:53:39    23:53:40 BTC/USD bid 59753.6 x 0.001009 | ask 59775.67 x 0.00200875 | vėlavimas -0.2 s
+2026-11-25 01:53:39    23:53:40 BTC/USD bid 59753.6 x 0.001009 | ask 59773.95 x 0.0009962 | vėlavimas -0.2 s
+2026-11-25 01:53:40    23:53:40 BTC/USD bid 59748.77 x 0.001982 | ask 59773.95 x 0.0009962 | vėlavimas -0.2 s
+2026-11-25 01:53:40    23:53:40 BTC/USD bid 59748.77 x 0.001982 | ask 59775.59 x 0.002019 | vėlavimas -0.2 s
+2026-11-25 01:53:40    23:53:40 BTC/USD bid 59748.77 x 0.001982 | ask 59768.6 x 0.0010054 | vėlavimas -0.2 s
+2026-11-25 01:53:40    23:53:40 BTC/USD bid 59745.8 x 0.001003 | ask 59768.6 x 0.0010054 | vėlavimas -0.2 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59744.8 x 0.0020192 | ask 59768.6 x 0.0010054 | vėlavimas -0.2 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59744.8 x 0.0020192 | ask 59768.8 x 0.00200601 | vėlavimas -0.2 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59744.8 x 0.0020192 | ask 59760.7 x 0.001005 | vėlavimas -0.2 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59744.3 x 0.0009939 | ask 59760.7 x 0.001005 | vėlavimas -0.2 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59740.489 x 0.00198798 | ask 59760.7 x 0.001005 | vėlavimas -0.1 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59746.958 x 0.0010037 | ask 59760.7 x 0.001005 | vėlavimas -0.1 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59746.958 x 0.0010037 | ask 59770.343 x 0.0020091 | vėlavimas -0.1 s
+2026-11-25 01:53:44    23:53:44 BTC/USD bid 59746.958 x 0.0010037 | ask 59761.349 x 0.00100649 | vėlavimas -0.1 s
+2026-11-25 01:53:48    23:53:48 BTC/USD bid 59738.437 x 0.00198223 | ask 59761.349 x 0.00100649 | vėlavimas -0.1 s
+2026-11-25 01:53:48    23:53:48 BTC/USD bid 59744.0 x 0.00099624 | ask 59761.349 x 0.00100649 | vėlavimas -0.1 s
+2026-11-25 01:53:48  data stream stopped
+2026-11-25 01:53:48  Gauta kotiruočių: 18
+2026-11-25 01:59:07  Prisijungta prie Alpaca (paper). Paskyra PA3VKAGLQ, būsena: ACTIVE
+2026-11-25 01:59:07  Grynieji: 100000 USD | perkamoji galia: 200000 USD
+2026-11-25 01:59:07  Kriptovaliutų prekyba: leidžiama
+2026-11-25 01:59:08  Kitas laisvas pavedimo ID: DP-ND4-3
+2026-11-25 01:59:17  Prisijungta prie Alpaca (paper). Paskyra PA3VKAGLQ, būsena: ACTIVE
+2026-11-25 01:59:17  Grynieji: 100000 USD | perkamoji galia: 200000 USD
+2026-11-25 01:59:17  Kriptovaliutų prekyba: leidžiama
+2026-11-25 01:59:17  Kitas laisvas pavedimo ID: DP-ND4-3
+2026-11-25 01:59:23  Klausomasi BTC/USD kotiruočių 20 s (šaltinis: US)...
+2026-11-25 01:59:23  started data stream
+2026-11-25 01:59:23  starting data websocket connection
+2026-11-25 01:59:23  connecting to wss://stream.data.alpaca.markets/v1beta3/crypto/us
+2026-11-25 01:59:33  websocket connection error, restarting connection: timed out during opening handshake
+2026-11-25 01:59:34  starting data websocket connection
+2026-11-25 01:59:34  connecting to wss://stream.data.alpaca.markets/v1beta3/crypto/us
+2026-11-25 01:59:35  connected to wss://stream.data.alpaca.markets/v1beta3/crypto/us
+2026-11-25 01:59:35  subscribed to quotes: ['BTC/USD']
+2026-11-25 01:59:36    01:59:36 BTC/USD bid 59737.41 x 0.00199276 | ask 59755.58 x 0.001003 | vėlavimas 0.0 s
+2026-11-25 01:59:36    01:59:36 BTC/USD bid 59743.647 x 0.00099942 | ask 59755.58 x 0.001003 | vėlavimas 0.0 s
+2026-11-25 01:59:36    01:59:36 BTC/USD bid 59743.647 x 0.00099942 | ask 59762.6 x 0.00199145 | vėlavimas 0.0 s
+2026-11-25 01:59:36    01:59:36 BTC/USD bid 59743.647 x 0.00099942 | ask 59762.57 x 0.0009905 | vėlavimas 0.0 s
+2026-11-25 01:59:38    01:59:38 BTC/USD bid 59742.67 x 0.0020016 | ask 59762.57 x 0.0009905 | vėlavimas 0.0 s
+2026-11-25 01:59:38    01:59:38 BTC/USD bid 59742.67 x 0.0020016 | ask 59762.7 x 0.002019 | vėlavimas 0.0 s
+2026-11-25 01:59:38    01:59:38 BTC/USD bid 59742.67 x 0.0020016 | ask 59751.55 x 0.00100899 | vėlavimas 0.0 s
+2026-11-25 01:59:38    01:59:38 BTC/USD bid 59741.624 x 0.00099993 | ask 59751.55 x 0.00100899 | vėlavimas 0.0 s
+2026-11-25 01:59:43  data stream stopped
+2026-11-25 01:59:43  Gauta kotiruočių: 8
+2026-11-25 02:00:30  KLAIDA: EOFError: 
+2026-11-25 02:00:56  Brokeris priėmė market pavedimą:
+2026-11-25 02:00:56    [DP-ND4-3] brokerio ID 2d048cb9-eca0-4ffc-81eb-fc0b338bea11 | market buy 0.002 BTC/USD | būsena: pending_new
+2026-11-25 02:00:58  Būsena po 2 s:
+2026-11-25 02:00:59    [DP-ND4-3] brokerio ID 2d048cb9-eca0-4ffc-81eb-fc0b338bea11 | market buy 0.002 BTC/USD | būsena: filled | įvykdyta 0.002 @ 59696.68
+2026-11-25 02:01:19  Brokeris priėmė market pavedimą:
+2026-11-25 02:01:19    [DP-ND4-4] brokerio ID 2bac4f93-9f6e-4ace-a25e-591a5854ec13 | market sell 0.0015 BTC/USD | būsena: pending_new
+2026-11-25 02:01:21  Būsena po 2 s:
+2026-11-25 02:01:21    [DP-ND4-4] brokerio ID 2bac4f93-9f6e-4ace-a25e-591a5854ec13 | market sell 0.0015 BTC/USD | būsena: filled | įvykdyta 0.0015 @ 59676.177
+2026-11-25 02:01:52  Paskutinė BTC/USD kaina: 59712.65 USD
+2026-11-25 02:02:01  BROKERIO KLAIDA: {"available":"0.000495","balance":"0.000495","code":40310000,"message":"insufficient balance for BTC (requested: 0.0005, available: 0.000495)","symbol":"USD"}
+2026-11-25 02:02:27  Brokeris priėmė market pavedimą:
+2026-11-25 02:02:27    [DP-ND4-6] brokerio ID 597a8100-2e09-4615-b701-8f80abe9bd4e | market sell 0.0004 BTC/USD | būsena: pending_new
+2026-11-25 02:02:29  Būsena po 2 s:
+2026-11-25 02:02:30    [DP-ND4-6] brokerio ID 597a8100-2e09-4615-b701-8f80abe9bd4e | market sell 0.0004 BTC/USD | būsena: filled | įvykdyta 0.0004 @ 59662.799
+2026-11-25 02:02:49  Brokeris priėmė market pavedimą:
+2026-11-25 02:02:49    [DP-ND4-7] brokerio ID 998447f7-d179-4de9-a889-a6f27ec4eb34 | market buy 0.003 BTC/USD | būsena: pending_new
+2026-11-25 02:02:51  Būsena po 2 s:
+2026-11-25 02:02:51    [DP-ND4-7] brokerio ID 998447f7-d179-4de9-a889-a6f27ec4eb34 | market buy 0.003 BTC/USD | būsena: filled | įvykdyta 0.003 @ 59695.46
+2026-11-25 02:03:03  Paskutinė BTC/USD kaina: 59712.65 USD
+2026-11-25 02:03:08  Brokeris priėmė limit pavedimą:
+2026-11-25 02:03:08    [DP-ND4-8] brokerio ID 8aabdc8a-86fa-43d3-be74-f86baf080b4c | limit sell 0.001 BTC/USD | limit 59713 | būsena: pending_new
+2026-11-25 02:03:10  Būsena po 2 s:
+2026-11-25 02:03:10    [DP-ND4-8] brokerio ID 8aabdc8a-86fa-43d3-be74-f86baf080b4c | limit sell 0.001 BTC/USD | limit 59713 | būsena: new
+2026-11-25 02:03:30  Pavedimai (all), rasta 7:
+2026-11-25 02:03:30    [DP-ND4-8] brokerio ID 8aabdc8a-86fa-43d3-be74-f86baf080b4c | limit sell 0.001 BTC/USD | limit 59713 | būsena: partially_filled | įvykdyta 0.000574411 @ 59713
+2026-11-25 02:03:30    [DP-ND4-7] brokerio ID 998447f7-d179-4de9-a889-a6f27ec4eb34 | market buy 0.003 BTC/USD | būsena: filled | įvykdyta 0.003 @ 59695.46
+2026-11-25 02:03:30    [DP-ND4-6] brokerio ID 597a8100-2e09-4615-b701-8f80abe9bd4e | market sell 0.0004 BTC/USD | būsena: filled | įvykdyta 0.0004 @ 59662.799
+2026-11-25 02:03:30    [DP-ND4-4] brokerio ID 2bac4f93-9f6e-4ace-a25e-591a5854ec13 | market sell 0.0015 BTC/USD | būsena: filled | įvykdyta 0.0015 @ 59676.177
+2026-11-25 02:03:30    [DP-ND4-3] brokerio ID 2d048cb9-eca0-4ffc-81eb-fc0b338bea11 | market buy 0.002 BTC/USD | būsena: filled | įvykdyta 0.002 @ 59696.68
+2026-11-25 02:03:30    [DP-ND4-2] brokerio ID 3969d4e8-f7cf-4eba-8f82-2054b2524070 | limit buy 1 AAPL | limit 336.53 | būsena: canceled
+2026-11-25 02:03:30    [DP-ND4-1] brokerio ID 5d2f7a57-96b5-4bcd-8e29-e4b463a8dfa6 | market buy 1 AAPL | būsena: canceled
+2026-11-25 02:03:52  Pavedimai (open), rasta 1:
+2026-11-25 02:03:52    [DP-ND4-8] brokerio ID 8aabdc8a-86fa-43d3-be74-f86baf080b4c | limit sell 0.001 BTC/USD | limit 59713 | būsena: partially_filled | įvykdyta 0.000574411 @ 59713
+2026-11-25 02:03:58  BROKERIO KLAIDA: {"code":40410000,"message":"order not found for 0"}
+2026-11-25 02:05:40  Prisijungta prie Alpaca (paper). Paskyra PA3VKAGLQ, būsena: ACTIVE
+2026-11-25 02:05:40  Grynieji: 99874.22 USD | perkamoji galia: 199748.44 USD
+2026-11-25 02:05:40  Kriptovaliutų prekyba: leidžiama
+2026-11-25 02:05:40  Kitas laisvas pavedimo ID: DP-ND4-9
+2026-11-25 02:06:22  Paskutinė BTC/USD kaina: 59675.0 USD
+2026-11-25 02:06:36  Brokeris priėmė limit pavedimą:
+2026-11-25 02:06:36    [DP-ND4-9] brokerio ID 5d9e99f2-9099-4a77-970d-ace0cdf56004 | limit buy 0.001 BTC/USD | limit 59674 | būsena: pending_new
+2026-11-25 02:06:38  Būsena po 2 s:
+2026-11-25 02:06:38    [DP-ND4-9] brokerio ID 5d9e99f2-9099-4a77-970d-ace0cdf56004 | limit buy 0.001 BTC/USD | limit 59674 | būsena: new
+2026-11-25 02:06:43  Pavedimai (open), rasta 1:
+2026-11-25 02:06:43    [DP-ND4-9] brokerio ID 5d9e99f2-9099-4a77-970d-ace0cdf56004 | limit buy 0.001 BTC/USD | limit 59674 | būsena: new
+2026-11-25 02:06:47  Atšaukimo užklausa pavedimui DP-ND4-9 išsiųsta.
+2026-11-25 02:06:49  Būsena po 2 s:
+2026-11-25 02:06:49    [DP-ND4-9] brokerio ID 5d9e99f2-9099-4a77-970d-ace0cdf56004 | limit buy 0.001 BTC/USD | limit 59674 | būsena: canceled
+2026-11-25 02:06:55  Pavedimai (all), rasta 8:
+2026-11-25 02:06:55    [DP-ND4-9] brokerio ID 5d9e99f2-9099-4a77-970d-ace0cdf56004 | limit buy 0.001 BTC/USD | limit 59674 | būsena: canceled
+2026-11-25 02:06:55    [DP-ND4-8] brokerio ID 8aabdc8a-86fa-43d3-be74-f86baf080b4c | limit sell 0.001 BTC/USD | limit 59713 | būsena: filled | įvykdyta 0.001 @ 59713
+2026-11-25 02:06:55    [DP-ND4-7] brokerio ID 998447f7-d179-4de9-a889-a6f27ec4eb34 | market buy 0.003 BTC/USD | būsena: filled | įvykdyta 0.003 @ 59695.46
+2026-11-25 02:06:55    [DP-ND4-6] brokerio ID 597a8100-2e09-4615-b701-8f80abe9bd4e | market sell 0.0004 BTC/USD | būsena: filled | įvykdyta 0.0004 @ 59662.799
+2026-11-25 02:06:55    [DP-ND4-4] brokerio ID 2bac4f93-9f6e-4ace-a25e-591a5854ec13 | market sell 0.0015 BTC/USD | būsena: filled | įvykdyta 0.0015 @ 59676.177
+2026-11-25 02:06:55    [DP-ND4-3] brokerio ID 2d048cb9-eca0-4ffc-81eb-fc0b338bea11 | market buy 0.002 BTC/USD | būsena: filled | įvykdyta 0.002 @ 59696.68
+2026-11-25 02:06:55    [DP-ND4-2] brokerio ID 3969d4e8-f7cf-4eba-8f82-2054b2524070 | limit buy 1 AAPL | limit 336.53 | būsena: canceled
+2026-11-25 02:06:55    [DP-ND4-1] brokerio ID 5d2f7a57-96b5-4bcd-8e29-e4b463a8dfa6 | market buy 1 AAPL | būsena: canceled
+2026-11-25 02:09:15  Gauta 30 žvakių (1Day) BTC/USD: 2026-10-27 - 2026-11-25
+2026-11-25 02:09:15  Paskutinės 10 žvakių:
+                                 open          high           low       close     volume
+timestamp                                                                               
+2026-11-16 00:00:00+00:00  65322.6050  65614.350000  63824.900000  64816.5975   2.328627
+2026-11-17 00:00:00+00:00  64822.2295  65384.837500  63262.485000  64878.2500   1.709713
+2026-11-18 00:00:00+00:00  64876.5000  64935.080000  62003.800000  62983.1135   4.423423
+2026-11-19 00:00:00+00:00  62983.0130  64024.309000  61357.490000  61911.2880   2.072860
+2026-11-20 00:00:00+00:00  61916.8600  62565.744000  57686.029532  58818.4650  10.577933
+2026-11-21 00:00:00+00:00  58820.5435  61142.939261  55120.650000  60094.6850   6.149245
+2026-11-22 00:00:00+00:00  60086.7000  61571.020500  58652.320000  61171.2685   2.019500
+2026-11-23 00:00:00+00:00  61176.5100  64614.094500  60283.055000  61194.8410   7.702559
+2026-11-24 00:00:00+00:00  61191.8600  61601.724500  59201.126500  59746.1910   2.417104
+2026-11-25 00:00:00+00:00  59740.4225  59756.602000  59639.529500  59681.9500   0.009617
+2026-11-25 02:09:15  Grafikas išsaugotas: istoriniai_BTC-USD.png (uždarykite langą, kad grįžtumėte į meniu)
