@@ -36,8 +36,7 @@ log = logging.info
 
 
 def setup_logging(log_file):
-    """Viskas, kas rodoma ekrane, kartu rašoma ir į log failą (veikimo rezultatams pateikti)."""
-    sys.stdout.reconfigure(encoding="utf-8")  # kad Windows konsolėje veiktų lietuviškos raidės
+    sys.stdout.reconfigure(encoding="utf-8")
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s  %(message)s",
@@ -47,12 +46,10 @@ def setup_logging(log_file):
 
 
 def value(x):
-    """Alpaca grąžina enum reikšmes (pvz. OrderStatus.FILLED) - paimame tekstą 'filled'."""
     return getattr(x, "value", x)
 
 
 def ask(prompt, default, cast=str):
-    """Paklausia reikšmės. Paspaudus Enter paliekama numatytoji reikšmė iš config.json."""
     while True:
         raw = input(f"{prompt} [{default}]: ").strip()
         if not raw:
@@ -64,7 +61,6 @@ def ask(prompt, default, cast=str):
 
 
 def log_order(o):
-    """Vieno pavedimo informacija, kurią grąžino brokeris."""
     limit = f" | limit {o.limit_price}" if o.limit_price else ""
     fill = f" | įvykdyta {o.filled_qty} @ {o.filled_avg_price}" if o.filled_avg_price else ""
     log(f"  [{o.client_order_id}] brokerio ID {o.id} | {value(o.type)} {value(o.side)} {o.qty} {o.symbol}"
@@ -82,7 +78,6 @@ class AlpacaBroker:
 
     # ---------- 1. Prisijungimas ----------
     def connect(self):
-        """Užklausa paskyros duomenų patikrina, ar raktai teisingi ir ar yra ryšys."""
         acc = self.trading.get_account()
         log(f"Prisijungta prie Alpaca ({'paper' if self.cfg['paper'] else 'LIVE'}). "
             f"Paskyra {acc.account_number}, būsena: {value(acc.status)}")
@@ -92,9 +87,6 @@ class AlpacaBroker:
         log(f"Kitas laisvas pavedimo ID: {self.cfg['order_prefix']}-{self.next_id}")
 
     def find_next_id(self):
-        """Alpaca neturi nextValidId (kaip IB), todėl jį apskaičiuojame patys: iš brokerio
-        pavedimų istorijos randame didžiausią mūsų ID numerį (PREFIKSAS-N) ir pridedame 1.
-        Taip ID nesikartoja net paleidus programą iš naujo."""
         prefix = self.cfg["order_prefix"] + "-"
         orders = self.trading.get_orders(GetOrdersRequest(status=QueryOrderStatus.ALL, limit=500))
         used = [int(o.client_order_id[len(prefix):]) for o in orders
@@ -112,8 +104,6 @@ class AlpacaBroker:
 
     # ---------- 2. Realaus laiko duomenys ----------
     def stream_quotes(self, symbol, seconds):
-        """Prisijungiame prie websocket srauto. Kiekvieną kartą atėjus naujai kotiruotei
-        Alpaca iškviečia on_quote. Po `seconds` sekundžių srautą sustabdome."""
         stream = CryptoDataStream(*self.keys, feed=self.feed)
         received = 0
 
@@ -147,7 +137,7 @@ class AlpacaBroker:
         if bars.empty:
             log(f"Istorinių duomenų {symbol} nerasta.")
             return
-        bars = bars.loc[symbol]  # df indeksas yra (simbolis, laikas) - paliekame tik laiką
+        bars = bars.loc[symbol]
         log(f"Gauta {len(bars)} žvakių ({timeframe}) {symbol}: {bars.index[0]:%Y-%m-%d} - {bars.index[-1]:%Y-%m-%d}")
         log("Paskutinės 10 žvakių:\n" + bars[["open", "high", "low", "close", "volume"]].tail(10).to_string())
 
@@ -158,7 +148,7 @@ class AlpacaBroker:
         plt.ylabel("Kaina, USD")
         plt.grid(True)
         plt.tight_layout()
-        file_name = f"istoriniai_{symbol.replace('/', '-')}.png"  # '/' negalima failo varde
+        file_name = f"istoriniai_{symbol.replace('/', '-')}.png"
         plt.savefig(file_name)
         log(f"Grafikas išsaugotas: {file_name} (uždarykite langą, kad grįžtumėte į meniu)")
         plt.show()
@@ -179,7 +169,6 @@ class AlpacaBroker:
         self.log_status_later(order)
 
     def log_status_later(self, order):
-        """Brokeris pavedimą apdoroja ne iš karto, todėl būseną perklausiame po kelių sekundžių."""
         wait = self.cfg["status_wait_seconds"]
         time.sleep(wait)
         log(f"Būsena po {wait} s:")
@@ -187,7 +176,6 @@ class AlpacaBroker:
 
     # ---------- 6. Atšaukimas ----------
     def cancel_order(self, client_order_id):
-        """Pavedimą randame pagal mūsų ID, o atšaukiame pagal brokerio ID."""
         order = self.trading.get_order_by_client_id(client_order_id)
         self.trading.cancel_order_by_id(order.id)
         log(f"Atšaukimo užklausa pavedimui {client_order_id} išsiųsta.")
@@ -215,14 +203,12 @@ MENU = """
 
 
 def limit_order_dialog(broker, cfg):
-    """Numatytoji limit kaina yra paskutinė kaina -/+ limit_offset_pct %, kad pavedimas
-    neįvyktų iš karto ir jį būtų galima atšaukti."""
     symbol = ask("Simbolis", cfg["symbol"]).upper()
     qty = ask("Kiekis", cfg["qty"], float)
     side = ask("Kryptis (buy/sell)", cfg["side"], str.lower)
     last = broker.last_trade(symbol).price
     shift = -cfg["limit_offset_pct"] if side == "buy" else cfg["limit_offset_pct"]
-    default_price = round(last * (1 + shift / 100))  # BTC kainos žingsnis 1 USD, todėl apvaliname iki sveiko
+    default_price = round(last * (1 + shift / 100))
     log(f"Paskutinė {symbol} kaina: {last} USD")
     price = ask("Limit kaina", default_price, float)
     broker.place_order("limit", symbol, qty, side, limit_price=price)
